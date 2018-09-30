@@ -30,7 +30,7 @@ suppressPackageStartupMessages(library(gridExtra))
 
 ```
 
-## 1) Get the maximum and minimum of GDP per capita for all continents.
+# 1) Get the maximum and minimum of GDP per capita for all continents.
 
 Firstly, I create a table for all the continents showing the minimum and maximum GDPs. I store this in a value called "Max_Min_gdpPercap_continent" so I can easily recall the manipulation for a table and a plot.
 
@@ -97,7 +97,7 @@ Spread_gdpPercap_continent %>%
 
 This graph shows the size of the difference between max GDP and min GDP in each continent-- it looks like Asia has the largest spread in GDP and Africa has the smallest. This means that there is a large difference in GDP among the people who live in Asia, while in Africa people tend to have similar GDPs. 
 
-## 2) How is life expectancy changing over time on different continents?
+# 2) How is life expectancy changing over time on different continents?
 
 ```{r}
 lifeExp_peryear <- gapminder %>%
@@ -119,7 +119,7 @@ lifeExp_peryear %>%
 
 When we look at the visualization we can tell that all countries have a general increase in life expectancy. Oceania has the highest life expectancy rate between 1952 and 2007, whereas Africa has the lowest.
 
-## 3) Look at, and visualize the spread of population within the continents in 
+# 3) Look at, and visualize the spread of population within the continents in 
 
 ```{r}
 Spread_pop_continent <- gapminder %>%
