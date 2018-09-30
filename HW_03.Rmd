@@ -52,7 +52,8 @@ Min_graph <- Max_Min_gdpPercap_continent %>%
     geom_col() +
     ggtitle("Continental spread of minimum Gdp per capita") +
     xlab("Continent") +
-    ylab("Min GDP per capita")
+    ylab("Min GDP per capita") +
+    theme(legend.position = "none")
 ```
 
 
@@ -62,7 +63,8 @@ Max_graph <- Max_Min_gdpPercap_continent %>%
     geom_col() +
     ggtitle("Continental spread of maximum Gdp per capita") +
     xlab("Continent") +
-    ylab("Max GDP per capita")
+    ylab("Max GDP per capita")+
+    theme(legend.position = "none")
 ```
 
 I have created a graph for both min GDP and max GDP, I will put them next to each other for easy comparison
