@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Welcome to my 3rd assignment! 
+
 In this assignment I will be using dplyr/ggplot2 to manipulate and explore data
 
 Below I accomplish 3 tasks:
