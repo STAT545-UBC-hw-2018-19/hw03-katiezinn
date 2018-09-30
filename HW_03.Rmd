@@ -72,6 +72,28 @@ I have created a graph for both min GDP and max GDP, I will put them next to eac
 grid.arrange(Min_graph, Max_graph)
 ```
 
+After creating this visualization I think it would be informative to create a graph showing the difference betweeen the maximum and minimum GDP for each continent-- to see the spread.
+
+
+```{r}
+Spread_gdpPercap_continent <- gapminder %>%
+  group_by(continent) %>%
+    summarize(min_gdpPercap = min(gdpPercap),
+            max_gdpPercap = max(gdpPercap), GDP_spread = (max_gdpPercap-min_gdpPercap))
+
+Spread_gdpPercap_continent %>%
+  kable(align = "c")
+
+Spread_gdpPercap_continent %>%
+  ggplot(aes(continent,GDP_spread, fill=continent)) +
+    geom_col() +
+    ggtitle("Continental spread of Gdp per capita (max - min)") +
+    xlab("Continent") +
+    ylab("Difference in GDP") +
+    theme(legend.position = "none")
+```
+This graph shows the size of the difference between max GDP and min GDP in each continent-- it looks like Asia has the largest spread in GDP and Africa has the smallest. 
+
 ## 2) How is life expectancy changing over time on different continents?
 
 ```{r}
