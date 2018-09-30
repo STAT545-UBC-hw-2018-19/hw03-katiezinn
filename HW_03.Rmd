@@ -72,6 +72,8 @@ I have created a graph for both min GDP and max GDP, I will put them next to eac
 grid.arrange(Min_graph, Max_graph)
 ```
 
+When we analyze the graphs we can see that Oceania has the highest minimum gdp per capita and Africa has the lowest minimum gdp per capita. that Asia has the highest max gdp per capita and Africa has the lowest max gdp per capita. 
+
 After creating this visualization I think it would be informative to create a graph showing the difference betweeen the maximum and minimum GDP for each continent-- to see the spread.
 
 
@@ -92,7 +94,8 @@ Spread_gdpPercap_continent %>%
     ylab("Difference in GDP") +
     theme(legend.position = "none")
 ```
-This graph shows the size of the difference between max GDP and min GDP in each continent-- it looks like Asia has the largest spread in GDP and Africa has the smallest. 
+
+This graph shows the size of the difference between max GDP and min GDP in each continent-- it looks like Asia has the largest spread in GDP and Africa has the smallest. This means that there is a large difference in GDP among the people who live in Asia, while in Africa people tend to have similar GDPs. 
 
 ## 2) How is life expectancy changing over time on different continents?
 
@@ -113,6 +116,8 @@ lifeExp_peryear %>%
     ylab("Life expectancy")
 
 ```
+
+When we look at the visualization we can tell that all countries have a general increase in life expectancy. Oceania has the highest life expectancy rate between 1952 and 2007, whereas Africa has the lowest.
 
 ## 3) Look at, and visualize the spread of population within the continents in 
 
@@ -138,4 +143,4 @@ gapminder %>%
     ylab("Population")
 
 ```
-
+This graph shows us that Asia has the highest population. I had to apply a log scale to the y axis as the scale of Asia's population was so high that the rest of the data was difficult to view.
